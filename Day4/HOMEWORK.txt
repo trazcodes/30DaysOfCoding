@@ -24,19 +24,27 @@ myfunc();
 
 *******maps
 
-Maps helps us to traverse through the index of an array
+Maps helps us to traverse through each element of an array
 
 --------------------------------
+Things Learned
 
 *About different variables:
-var
-let
-const
-And Diffence between them.
+var: used to declare variable
+let: used to declare block scoped variable
+const: used to declare a variable whose value cannot be initialized later.
+
+*And Diffence between them.
+
+Variables declared using var can be used throughout the function where they are declared.
+While , variables declared by let are available only inside the block where they are declared. 
 
 *About different type of loops and its uses:
-For loop
-forEach
-maps
 
-Difference between them and how they are used.
+For loop: used to iterate repeatedly a block of code till the condition is true.
+forEach: It loops through any array provided function for each index of the array.
+for of : loops over the iterable object
+for in : loops over the properties of an array
+
+
+
