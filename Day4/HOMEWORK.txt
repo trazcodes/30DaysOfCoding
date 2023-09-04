@@ -1,0 +1,42 @@
+*******Typecasting
+
+Typecasting means changing the data type of a variable to another datatype.
+There are two type of type casting.
+Implicit and explicit.
+
+Implicit is a type casting which can be done automatically by the compiler.
+Explicit is something which needs to be done forcefully by the programmer.
+
+*******Closure
+
+It is a feature of js which allows us to access outer function's scope from the inner function.
+eg.
+
+function myfunc()
+{
+    var a= 5;
+    function display(){
+        console.log(a)
+    }
+    display();
+}
+myfunc();
+
+*******maps
+
+Maps helps us to traverse through the index of an array
+
+--------------------------------
+
+*About different variables:
+var
+let
+const
+And Diffence between them.
+
+*About different type of loops and its uses:
+For loop
+forEach
+maps
+
+Difference between them and how they are used.
