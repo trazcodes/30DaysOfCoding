@@ -1,0 +1,103 @@
+1. let and const
+2. class keyword
+3. import and export operands
+4. Promises
+5. Arrow Function
+6. Enhanced Object Literals
+7. Destructuring Assignment
+8. Multi Line Strings
+9. Template Literals
+10. Default Parameters
+------------------------------------
+
+1. let allows to scope the variable to the blocks.
+eg.:
+
+function func(bullval)
+{
+    let sum=5;
+    if(boolVal)
+    {
+        let sum=0;
+    }
+    return sum;
+}
+console.log(func(true));
+
+OUTPUT:
+5
+
+const is an immutable and also block-scoped like let.
+-------------------------------------------------
+
+2. We can create class in ES6 using “class” keyword.
+
+class Profile {   
+   constructor(firstName, lastName = '') { // class constructor
+      this.firstName = firstName;
+      this.lastName = lastName;     
+   }  
+    
+   getName() { // class method       
+     console.log(`Name: ${this.firstName} ${this.lastName}`);    
+   } 
+}
+let profileObj = new Profile('Kavisha', 'Talsania');
+profileObj.getName(); // output: Name: Kavisha Talsania
+------------------------------------------------------
+
+3. We can import methods or variables using import and export statement.
+
+--------------------------------
+
+4. Promises are used for asynchronous execution.
+eg.:
+
+var asyncCall =  new Promise((resolve, reject) => {
+   // do something async 
+   resolve();
+}).then(()=> {   
+   console.log('Yay!');
+})
+
+------------------------------------------
+5. The fat arrows are amazing because they would make your this behave properly, i.e., this will have the same value as in the context of the function— it won’t mutate.
+
+$('.btn').click((event) => {   
+   this.doSomething() 
+});
+---------------------------------------------------
+6. Object literals make it easy to quickly create objects with properties inside the curly braces.
+------------------------------------------
+
+7. The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variable.
+
+var o = {p: 42, q: true};
+var {p, q} = o;
+
+console.log(p); // 42
+console.log(q); // true
+------------------------------------------------------------
+
+8. Stings can be written using back-ticks.
+
+let poemData = `Johny Johny Yes Papa,     
+                Eating sugar?  No, papa!
+                Telling lies? No, papa!
+                Open your mouth Ah, ah, ah!`
+
+--------------------------------------------------
+9.we can use a new syntax ${PARAMETER} inside of the back-ticked string.
+
+var name = `Your name is ${firstName} ${lastName}.`
+
+------------------------------------------------
+10. we can put the default values right in the signature of the functions.
+
+var calculateArea = function(height = 50, width = 80) {  
+    // write logic
+    ...
+}
+
+
+Also Learned about working of JS and still learing Advance JS.
